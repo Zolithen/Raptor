@@ -1,2 +1,5 @@
 # Raptor
  Automates downloading and updating libraries for Löve2d projects
+
+ # How to use
+ Place your project you want to use libraries for in the "proj" folder. In the `raptor_conf` file add lines of the form `raptor.add(<github repo>, <repo>);` when `<github repo>` is an string with the name of the repo in github (for example, to download `https://github.com/Zolithen/Stunenca` you would put `"Zolithen/Stunenca"`) and `<branch>` just contains the branch to download (for example, `"master"`). Then you would run Raptor like a normal Löve2D game (raptor, not the project), download the libraries by pressing `t` and running the project with the key `y`. If you change the `raptor_conf` file to reload it you don't have to restart, just press `u`. If you want to reload all the libraries, you first have to delete them by `r` and then download them again. Please always have backups of your project.

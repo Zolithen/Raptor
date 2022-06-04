@@ -3,6 +3,10 @@ require "raptor"
 
 raptor.log("Executing task: ", trace.styles.green, 1);
 
+function love.load()
+	raptor.reload_conf();
+end
+
 function love.draw()
 	love.graphics.clear(0.25, 0.25, 0.25)
 	--love.graphics.print("y - Run project", love.graphics.getWidth()-200, 0);
