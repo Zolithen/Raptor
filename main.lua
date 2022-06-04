@@ -2,9 +2,6 @@ require "trace"
 require "raptor"
 
 raptor.log("Executing task: ", trace.styles.green, 1);
-function love.load()
-	raptor.add("Zolithen/Stunenca", "master");
-end
 
 function love.draw()
 	love.graphics.clear(0.25, 0.25, 0.25)
